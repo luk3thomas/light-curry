@@ -1,0 +1,32 @@
+{
+  "name": "light-curry",
+  "version": "0.0.2",
+  "description": "Lightweight curry function for JavaScript",
+  "main": "index.js",
+  "scripts": {
+    "test": "./node_modules/.bin/jasmine-node --coffee test/",
+    "testw": "./node_modules/.bin/jasmine-node --color --autotest --coffee test/ --watch src",
+    "prepublish": "npm run compile",
+    "compile": "./node_modules/.bin/webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/luk3thomas/light-curry"
+  },
+  "keywords": [
+    "curry"
+  ],
+  "author": "Luke Thomas",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/luk3thomas/light-curry/issues"
+  },
+  "homepage": "https://github.com/luk3thomas/light-curry",
+  "devDependencies": {
+    "coffee-loader": "^0.7.2",
+    "coffee-script": "^1.9.3",
+    "jasmine-node": "^1.14.5",
+    "node-libs-browser": "^0.5.2",
+    "webpack": "^1.9.10"
+  }
+}
